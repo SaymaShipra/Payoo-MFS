@@ -35,12 +35,14 @@
           </p>
           <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
             <div
+              id="add-money-box"
               class="box border border-gray-400 p-4 rounded-xl text-center cursor-pointer"
             >
               <img class="w-8 mx-auto" src="assets/wallet1.png" alt="" />
               <h3>Add Money</h3>
             </div>
             <div
+              id="cashout-box"
               class="box border border-gray-400 p-4 rounded-xl text-center cursor-pointer"
             >
               <img class="w-8 mx-auto" src="assets/send1.png" alt="" />
@@ -71,7 +73,7 @@
               <h3>Transactions</h3>
             </div>
           </div>
-          <section>
+          <section id="addmoney">
             <h3 class="text-lg font-semibold">Add money</h3>
 
             <div class="">
@@ -145,10 +147,70 @@
                       <button
                         type="submit"
                         id="add-money"
-                        id="login-btn"
                         class="btn bg-blue-500 rounded-full text-white text-xl"
                       >
                         Add Money
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="cashout">
+            <h3 class="text-lg font-semibold">Cash Out</h3>
+            <div class="">
+              <div class="hero-content">
+                <div
+                  class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+                >
+                  <form action="" class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text"> Agent Number</span>
+                      </label>
+                      <input
+                        id="account-number"
+                        type="number"
+                        value="01301301302"
+                        placeholder="Enter 11 digit account number"
+                        class="input input-bordered rounded-full bg-gray-200"
+                        required
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount </span>
+                      </label>
+                      <input
+                        id="cashout-amount"
+                        type="number"
+                        placeholder="Enter Amount to withdraw"
+                        class="input input-bordered rounded-full bg-gray-200"
+                        required
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">PIN Number</span>
+                      </label>
+                      <input
+                        id="cashout-pin"
+                        type="text"
+                        value="1234"
+                        placeholder="Enter 4 digit PIN Number"
+                        class="input input-bordered rounded-full bg-gray-200"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-control mt-6">
+                      <button
+                        type="submit"
+                        id="cashout-btn"
+                        class="btn bg-blue-500 rounded-full text-white text-xl"
+                      >
+                        Withdraw Money
                       </button>
                     </div>
                   </form>
@@ -160,6 +222,9 @@
       </header>
     </section>
 
-    <script src="script/addMoney.js"></script>
+    <!-- <script src="script/addMoney.js"></script> -->
+    <script src="script/recap.js"></script>
+    <script src="script/toggle.js"></script>
+    <script src="script/cashout.js"></script>
   </body>
 </html>
